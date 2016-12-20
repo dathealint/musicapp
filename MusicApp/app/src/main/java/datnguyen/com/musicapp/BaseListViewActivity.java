@@ -23,7 +23,7 @@ public class BaseListViewActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_base_list_items);
+		setContentView(layoutResId());
 
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -45,6 +45,10 @@ public class BaseListViewActivity extends AppCompatActivity {
 
 		// after that, reload listview
 		reloadListView();
+	}
+
+	protected int layoutResId() {
+		return R.layout.activity_base_list_items;
 	}
 
 	private void reloadListView() {

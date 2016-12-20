@@ -15,8 +15,13 @@ public class SearchActivity extends BaseListViewActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_search);
+
 		this.setTitle(getString(R.string.view_title_search));
+	}
+
+	@Override
+	protected int layoutResId() {
+		return R.layout.activity_search;
 	}
 
 	@Override
