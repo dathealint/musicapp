@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="datnguyen.com.musicapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activities.ArtistsActivity" android:parentActivityName=".Activities.MainActivity"/>
+        <activity android:name=".Activities.ArtistDetailActivity" android:parentActivityName=".Activities.ArtistsActivity"/>
+        <activity android:name=".Activities.SearchActivity" android:parentActivityName=".Activities.MainActivity"/>
+        <activity android:name=".Activities.BaseListViewActivity" android:parentActivityName=".Activities.MainActivity"/>
+        <activity android:name=".Activities.FavoriteSongsActivity" android:parentActivityName=".Activities.MainActivity"/>
+        <activity android:name=".Activities.PlayerActivity"/>
+        <activity android:name=".Activities.PlaylistDetailActivity" android:parentActivityName=".Activities.PlaylistsActivity"/>
+        <activity android:name=".Activities.PlaylistsActivity" android:parentActivityName=".Activities.MainActivity"/>
+    </application>
+
+</manifest>

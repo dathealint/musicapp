@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+
+    <string name="view_title_my_favorites">My Favorites</string>
+    <string name="view_title_playlists">Playlists</string>
+    <string name="view_title_artist">Artists</string>
+    <string name="view_title_search">Search</string>
+
+    <string name="text_desc_player">Hello! You\'ve chosen to play \'%s\'!\n Have Fun!!</string>
+    <string name="txt_search_hint">What do you want to listen to today? :D</string>
+    <string name="btn_favorite">My Favorites</string>
+    <string name="btn_playlists">Playlists</string>
+    <string name="btn_artists">Artists</string>
+    <string name="btn_search">Search</string>
+
+</resources>
