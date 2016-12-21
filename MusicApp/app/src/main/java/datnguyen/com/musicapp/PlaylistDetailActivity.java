@@ -1,4 +1,4 @@
-package datnguyen.com.musicapp.Activities;
+package datnguyen.com.musicapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,6 +20,11 @@ public class PlaylistDetailActivity extends BaseListViewActivity {
 		if (!TextUtils.isEmpty(playlist)) {
 			this.setTitle(playlist);
 		}
+	}
+
+	@Override
+	protected String descriptionText() {
+		return getString(R.string.txt_desc_playlist_detail);
 	}
 
 	@Override

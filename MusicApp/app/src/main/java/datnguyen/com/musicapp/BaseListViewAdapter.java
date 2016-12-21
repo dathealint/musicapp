@@ -1,4 +1,4 @@
-package datnguyen.com.musicapp.Activities;
+package datnguyen.com.musicapp;
 
 import android.content.Context;
 import android.view.LayoutInflater;

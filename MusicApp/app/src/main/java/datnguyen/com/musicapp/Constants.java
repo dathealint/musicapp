@@ -1,4 +1,4 @@
-package datnguyen.com.musicapp.Activities;
+package datnguyen.com.musicapp;
 
 /**
  * Created by datnguyen on 12/20/16.

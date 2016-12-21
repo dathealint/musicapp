@@ -1,4 +1,4 @@
-package datnguyen.com.musicapp.Activities;
+package datnguyen.com.musicapp;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
+
 import java.util.ArrayList;
 
 import datnguyen.com.musicapp.R;
@@ -19,6 +21,7 @@ public class BaseListViewActivity extends AppCompatActivity {
 	public ArrayList elements = new ArrayList();
 	public ListView listView = null;
 	private BaseListViewAdapter adapter = null;
+	private TextView tvDescription = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,9 @@ public class BaseListViewActivity extends AppCompatActivity {
 		});
 		listView.setMinimumHeight((int) getResources().getDimension(R.dimen.list_min_row_height));
 
+		tvDescription = (TextView) findViewById(R.id.tvDescription);
+		tvDescription.setText(descriptionText());
+
 		adapter = new BaseListViewAdapter(this, elements);
 		listView.setAdapter(adapter);
 
@@ -49,6 +55,10 @@ public class BaseListViewActivity extends AppCompatActivity {
 
 	protected int layoutResId() {
 		return R.layout.activity_base_list_items;
+	}
+
+	protected String descriptionText() {
+		return "";
 	}
 
 	private void reloadListView() {

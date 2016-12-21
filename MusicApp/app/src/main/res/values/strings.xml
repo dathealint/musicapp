@@ -13,4 +13,10 @@
     <string name="btn_artists">Artists</string>
     <string name="btn_search">Search</string>
 
+    <string name="txt_desc_search">Users can search for local songs by entering keywords to the search box.\nTapping on result item will open Music Player and play that song</string>
+    <string name="txt_desc_playlist">This screen displays local music\'s playlist list.</string>
+    <string name="txt_desc_playlist_detail">This screen displays all songs containing inside selected playlist.</string>
+    <string name="txt_desc_artist">This screen displays local music\'s artist list.</string>
+    <string name="txt_desc_artist_detail">This screen displays all songs of selected artist.</string>
+    <string name="txt_desc_favortie">This screen displays all songs that user marked as Favorite.</string>
 </resources>

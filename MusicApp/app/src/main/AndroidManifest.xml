@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme"
         >
         <activity
-            android:name=".Activities.MainActivity"
+            android:name=".MainActivity"
             android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -20,27 +20,27 @@
         </activity>
 
         <activity
-            android:name=".Activities.ArtistsActivity"
-            android:parentActivityName=".Activities.MainActivity"/>
+            android:name=".ArtistsActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".Activities.ArtistDetailActivity"
-            android:parentActivityName=".Activities.ArtistsActivity"/>
+            android:name=".ArtistDetailActivity"
+            android:parentActivityName=".ArtistsActivity"/>
         <activity
-            android:name=".Activities.SearchActivity"
-            android:parentActivityName=".Activities.MainActivity"/>
+            android:name=".SearchActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".Activities.BaseListViewActivity"
-            android:parentActivityName=".Activities.MainActivity"/>
+            android:name=".BaseListViewActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".Activities.FavoriteSongsActivity"
-            android:parentActivityName=".Activities.MainActivity"/>
-        <activity android:name=".Activities.PlayerActivity"/>
+            android:name=".FavoriteSongsActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".PlayerActivity"/>
         <activity
-            android:name=".Activities.PlaylistDetailActivity"
-            android:parentActivityName=".Activities.PlaylistsActivity"/>
+            android:name=".PlaylistDetailActivity"
+            android:parentActivityName=".PlaylistsActivity"/>
         <activity
-            android:name=".Activities.PlaylistsActivity"
-            android:parentActivityName=".Activities.MainActivity"/>
+            android:name=".PlaylistsActivity"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package datnguyen.com.musicapp.Activities;
+package datnguyen.com.musicapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +19,11 @@ public class ArtistDetailActivity extends BaseListViewActivity {
 		if (!TextUtils.isEmpty(artist)) {
 			this.setTitle(artist);
 		}
+	}
+
+	@Override
+	protected String descriptionText() {
+		return getString(R.string.txt_desc_artist_detail);
 	}
 
 	@Override

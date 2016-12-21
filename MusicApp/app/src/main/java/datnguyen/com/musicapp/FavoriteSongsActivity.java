@@ -1,4 +1,4 @@
-package datnguyen.com.musicapp.Activities;
+package datnguyen.com.musicapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +17,11 @@ public class FavoriteSongsActivity extends BaseListViewActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.setTitle(getString(R.string.view_title_my_favorites));
+	}
+
+	@Override
+	protected String descriptionText() {
+		return getString(R.string.txt_desc_favortie);
 	}
 
 	@Override

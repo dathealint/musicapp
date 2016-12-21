@@ -1,8 +1,7 @@
-package datnguyen.com.musicapp.Activities;
+package datnguyen.com.musicapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 
 import datnguyen.com.musicapp.R;
 
@@ -22,6 +21,11 @@ public class SearchActivity extends BaseListViewActivity {
 	@Override
 	protected int layoutResId() {
 		return R.layout.activity_search;
+	}
+
+	@Override
+	protected String descriptionText() {
+		return getString(R.string.txt_desc_search);
 	}
 
 	@Override
